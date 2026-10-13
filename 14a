@@ -1,0 +1,37 @@
+<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ taglib prefix="fn" uri="jakarta.tags.functions" %>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSTL Functions Tags</title>
+</head>
+<body>
+    <h2>JSTL Functions Demonstration</h2>
+
+    <c:set var="str" value="Hello Java Programming"/>
+
+    <p>Original String: ${str}</p>
+
+    <p>Length: ${fn:length(str)}</p>
+
+    <p>Uppercase: ${fn:toUpperCase(str)}</p>
+
+    <p>Lowercase: ${fn:toLowerCase(str)}</p>
+
+    <p>Contains Java: ${fn:contains(str, "Java")}</p>
+
+    <p>Starts with Hello: ${fn:startsWith(str, "Hello")}</p>
+
+    <p>Ends with Programming:
+        ${fn:endsWith(str, "Programming")}
+    </p>
+
+    <p>Replace Java with JSP:
+        ${fn:replace(str, "Java", "JSP")}
+    </p>
+
+    <p>Substring: ${fn:substring(str, 6, 10)}</p>
+
+</body>
+</html>
